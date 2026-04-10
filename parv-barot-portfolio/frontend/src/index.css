@@ -20,9 +20,6 @@
   --coral: #e07060;
   --amber: #d4954a;
   --purple: #7c5cbf;
-  --neu-shadow: 6px 6px 12px #c8cfd8, -6px -6px 12px #ffffff;
-  --neu-inset: inset 4px 4px 8px #c8cfd8, inset -4px -4px 8px #ffffff;
-  --neu-hover: 8px 8px 16px #c0c8d0, -8px -8px 16px #ffffff;
   --radius: 12px;
   --radius-lg: 16px;
   --font-display: 'Syne', sans-serif;
