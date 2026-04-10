@@ -2,11 +2,11 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { projects } from '../data/projects';
 
 const colorMap = {
-  green:  { tag: 'tag-green',  hex: '#c8f060', dim: 'rgba(200,240,96,0.08)'  },
-  blue:   { tag: 'tag-blue',   hex: '#60a8f0', dim: 'rgba(96,168,240,0.08)'  },
-  amber:  { tag: 'tag-amber',  hex: '#f0b860', dim: 'rgba(240,184,96,0.08)'  },
-  coral:  { tag: 'tag-coral',  hex: '#f07060', dim: 'rgba(240,112,96,0.08)'  },
-  purple: { tag: 'tag-purple', hex: '#a060f0', dim: 'rgba(160,96,240,0.08)'  },
+  green:  { tag: 'tag-green',  hex: '#3a7d44', dim: 'rgba(58,125,68,0.08)'   },
+  blue:   { tag: 'tag-blue',   hex: '#2e5fa3', dim: 'rgba(46,95,163,0.08)'   },
+  amber:  { tag: 'tag-amber',  hex: '#b5651d', dim: 'rgba(181,101,29,0.08)'  },
+  coral:  { tag: 'tag-coral',  hex: '#c0392b', dim: 'rgba(192,57,43,0.08)'   },
+  purple: { tag: 'tag-purple', hex: '#6c3483', dim: 'rgba(108,52,131,0.08)'  },
 };
 
 export default function ProjectDetail() {
