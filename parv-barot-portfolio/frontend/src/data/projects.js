@@ -15,6 +15,7 @@ export const projects = [
     heroStat: "9.4%",
     heroLabel: "MAPE achieved (down from 18%)",
     isLive: false,
+    excelLink: "https://docs.google.com/spreadsheets/d/1KnqN6bYQiUSiTbUpFL8G6W9SwOHRA_aH/view",
     overview: "A regional grocery chain faces $2.3M in annual inventory write-offs due to demand volatility across 3,000 SKUs and 10 store locations. The planning team relies on static 4-week moving averages, missing seasonal spikes and simultaneously generating overstock and stockouts within the same category.",
     objective: "Build a production-ready demand forecasting system that reduces MAPE below 10%, dynamically recalculates reorder points based on forecast error, and surfaces executive-level S&OP insights in a Tableau dashboard.",
     problem: {
@@ -54,6 +55,7 @@ export const projects = [
     heroStat: "14.2%",
     heroLabel: "above-benchmark readmission rate gap identified",
     isLive: false,
+    excelLink: "https://docs.google.com/spreadsheets/d/16he_HjwJKuM8YTZt3t1UZW8_JdRt0yy8/view",
     overview: "A hospital network's COO needs to understand why 3 of its 8 facilities are underperforming on readmission rates and patient satisfaction scores relative to national CMS benchmarks — and wants a prioritized transformation roadmap before the next audit cycle.",
     objective: "Deliver a consulting-grade diagnostic: peer benchmarking analysis, regression-identified root causes, and a MECE-structured 90-day transformation roadmap with projected financial impact.",
     problem: {
@@ -93,6 +95,7 @@ export const projects = [
     heroStat: "71%",
     heroLabel: "of delays traced to 22% of order corridors",
     isLive: false,
+    excelLink: "https://docs.google.com/spreadsheets/d/1LcfLyqa31p5GJ5eiwuC9L_vBGUCY0WcY/view",
     overview: "An online marketplace growing at 40% YoY is seeing customer satisfaction erode as late delivery rates climb to 8.4%. The VP of Logistics suspects the problem is concentrated in specific seller-to-customer corridors, but has no visibility into which routes, sellers, or carrier partnerships are driving delay variance.",
     objective: "Conduct an OTIF analysis to identify the highest-impact delay corridors, decompose root causes, and deliver a network redesign recommendation with simulated performance impact.",
     problem: {
@@ -132,6 +135,7 @@ export const projects = [
     heroStat: "0.91",
     heroLabel: "AUC-ROC score on test set",
     isLive: false,
+    excelLink: "https://docs.google.com/spreadsheets/d/1KnlUydf_ENLt0BW1NTk5yAqkh6cuUKpF/view",
     overview: "A B2B SaaS company's CFO is alarmed that monthly churn has risen from 1.8% to 3.1% over two quarters, quietly eroding $1.2M in ARR. The Customer Success team has no early warning system — they only discover a customer is churning when a cancellation ticket is submitted.",
     objective: "Build an interpretable churn prediction model that generates a revenue-at-risk ranking per account, identify the 3 highest-impact churn drivers using SHAP, and produce a segmented retention playbook.",
     problem: {
@@ -171,6 +175,7 @@ export const projects = [
     heroStat: "2",
     heroLabel: "uncontested white space categories identified",
     isLive: false,
+    excelLink: "https://docs.google.com/spreadsheets/d/15t-pVQ6qjIE39Bs8HpB_-nitU30ptVGp/view",
     overview: "A mid-size natural foods brand is planning a national expansion from 3 to 12 markets. The CMO needs to know which categories to enter first, at what price points, and how to differentiate against entrenched private-label competition — all within a $2M launch budget.",
     objective: "Map the competitive landscape using clustering analysis, identify price-nutrition white spaces, model price elasticity for optimal entry pricing, and build a 3-scenario go-to-market financial model with break-even analysis.",
     problem: {
