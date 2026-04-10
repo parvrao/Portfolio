@@ -62,7 +62,7 @@ export default function Contact() {
               }}
                 onMouseEnter={e => e.target.style.background = 'var(--accent2)'}
                 onMouseLeave={e => e.target.style.background = 'var(--accent)'}
-              >Download Resume</a>
+              >View Resume</a>
             </div>
           </div>
         </div>
