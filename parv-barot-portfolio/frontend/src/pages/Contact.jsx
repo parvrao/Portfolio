@@ -53,7 +53,7 @@ export default function Contact() {
                   <div style={{ fontSize: 13, color: 'var(--text2)', lineHeight: 1.6 }}>{r.desc}</div>
                 </div>
               ))}
-              <a href="/Parv_Barot_Resume.pdf" target="_blank" style={{
+              href="https://drive.google.com/file/d/1bP8ei6Vkwk3cxsNYWKNC_OMuUBTsy9Tc/view?usp=sharing" target="_blank" rel="noreferrer"
                 display: 'block', textAlign: 'center', marginTop: 8,
                 fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
                 letterSpacing: '0.08em', textTransform: 'uppercase',
