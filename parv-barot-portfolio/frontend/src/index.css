@@ -3,25 +3,28 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0a0a0a;
-  --bg2: #111111;
-  --bg3: #181818;
-  --surface: #1e1e1e;
-  --border: #2a2a2a;
-  --border2: #333;
-  --text: #f0ede8;
-  --text2: #a09d98;
-  --text3: #5a5755;
-  --accent: #c8f060;
-  --accent2: #a8d040;
-  --accent-dim: rgba(200,240,96,0.12);
-  --accent-dim2: rgba(200,240,96,0.06);
-  --blue: #60a8f0;
-  --coral: #f07060;
-  --amber: #f0b860;
-  --purple: #a060f0;
-  --radius: 4px;
-  --radius-lg: 8px;
+  --bg: #e8edf2;
+  --bg2: #dde3ea;
+  --bg3: #d0d8e0;
+  --surface: #eef1f5;
+  --border: rgba(255,255,255,0.8);
+  --border2: rgba(163,177,198,0.6);
+  --text: #2d3748;
+  --text2: #4a5568;
+  --text3: #718096;
+  --accent: #4a6fa5;
+  --accent2: #3a5f95;
+  --accent-dim: rgba(74,111,165,0.12);
+  --accent-dim2: rgba(74,111,165,0.06);
+  --blue: #4a6fa5;
+  --coral: #e07060;
+  --amber: #d4954a;
+  --purple: #7c5cbf;
+  --neu-shadow: 6px 6px 12px #c8cfd8, -6px -6px 12px #ffffff;
+  --neu-inset: inset 4px 4px 8px #c8cfd8, inset -4px -4px 8px #ffffff;
+  --neu-hover: 8px 8px 16px #c0c8d0, -8px -8px 16px #ffffff;
+  --radius: 12px;
+  --radius-lg: 16px;
   --font-display: 'Syne', sans-serif;
   --font-body: 'DM Sans', sans-serif;
   --nav-h: 64px;
