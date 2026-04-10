@@ -62,7 +62,7 @@ export default function Nav() {
                 onMouseLeave={e => { if (location.pathname !== l.to) e.target.style.color = 'var(--text2)'; }}
               >{l.label}</Link>
             ))}
-            <a href="/Parv_Barot_Resume.pdf" target="_blank" style={{
+          <a href="https://drive.google.com/file/d/1bP8ei6Vkwk3cxsNYWKNC_OMuUBTsy9Tc/view?usp=sharing" target="_blank" style={{
               fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
               letterSpacing: '0.08em', textTransform: 'uppercase',
               padding: '8px 16px', border: '1px solid var(--accent)',
