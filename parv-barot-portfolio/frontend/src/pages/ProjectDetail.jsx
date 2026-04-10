@@ -204,6 +204,17 @@ export default function ProjectDetail() {
                 onMouseEnter={e => e.target.style.borderColor = 'var(--text)'}
                 onMouseLeave={e => e.target.style.borderColor = 'var(--border2)'}
               >GitHub Repo ↗</a>
+              {p.excelLink && (
+  <a href={p.excelLink} target="_blank" rel="noreferrer" style={{
+    fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
+    letterSpacing: '0.08em', textTransform: 'uppercase', padding: '12px 24px',
+    background: 'transparent', color: c.hex, border: `1px solid ${c.hex}`,
+    borderRadius: 'var(--radius)', transition: 'all 0.2s',
+  }}
+    onMouseEnter={e => { e.target.style.background = c.hex; e.target.style.color = '#fff'; }}
+    onMouseLeave={e => { e.target.style.background = 'transparent'; e.target.style.color = c.hex; }}
+  >↗ View Excel Analysis</a>
+)}
 
               {p.isLive ? (
                 <a href={p.liveLink} target="_blank" rel="noreferrer" style={{
