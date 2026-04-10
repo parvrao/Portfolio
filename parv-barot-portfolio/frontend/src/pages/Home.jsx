@@ -145,7 +145,7 @@ export default function Home() {
                 <Link key={p.id} to={`/projects/${p.id}`} style={{ display: 'block', textDecoration: 'none' }}>
                   <div style={{
                     background: 'var(--bg2)', padding: 32, height: '100%',
-                    border: '1px solid var(--border)', transition: 'all 0.25s',
+                    boxShadow: 'var(--neu-shadow)', border: 'none', transition: 'all 0.25s',
                     cursor: 'pointer', position: 'relative', overflow: 'hidden',
                   }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--surface)'; e.currentTarget.style.borderColor = c.hex + '50'; }}
