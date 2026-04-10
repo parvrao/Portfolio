@@ -125,7 +125,7 @@ export default function Home() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 64, flexWrap: 'wrap', gap: 24 }}>
             <div>
               <div className="section-eyebrow">Selected Work</div>
-              <h2 className="section-title">Five Projects.<br />Five Industries.</h2>
+              <h2 className="section-title">{projects.length} Projects.<br />Seven Industries.
             </div>
             <Link to="/projects" style={{
               fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
