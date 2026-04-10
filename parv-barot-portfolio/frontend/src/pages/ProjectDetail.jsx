@@ -38,17 +38,17 @@ export default function ProjectDetail() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 24, marginBottom: 40 }}>
             <div style={{ flex: '1 1 600px' }}>
               <div style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
-                <span style={{ fontFamily: 'var(--font-display)', fontSize: 56, fontWeight: 800, color: 'var(--border)', lineHeight: 1 }}>{p.number}</span>
+                <span style={{ fontFamily: 'var(--font-display)', fontSize: 56, fontWeight: 800, color: 'var(--border2)', lineHeight: 1 }}>{p.number}</span>
                 {p.isLive && (
                   <span style={{
                     display: 'flex', alignItems: 'center', gap: 6,
                     fontSize: 11, fontFamily: 'var(--font-display)', fontWeight: 700,
                     letterSpacing: '0.1em', textTransform: 'uppercase',
-                    color: 'var(--accent)', padding: '4px 10px',
-                    border: '1px solid rgba(200,240,96,0.3)', borderRadius: 2,
-                    background: 'rgba(200,240,96,0.06)',
+                    color: '#2e5fa3', padding: '4px 10px',
+                    border: '1px solid rgba(46,95,163,0.3)', borderRadius: 2,
+                    background: 'rgba(46,95,163,0.06)',
                   }}>
-                    <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--accent)', animation: 'pulse-glow 2s infinite', display: 'inline-block' }} />
+                    <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#2e5fa3', display: 'inline-block' }} />
                     Live Product
                   </span>
                 )}
@@ -62,7 +62,7 @@ export default function ProjectDetail() {
             </div>
 
             {/* Sidebar card */}
-            <div style={{ background: 'var(--bg3)', border: '1px solid var(--border)', borderRadius: 8, padding: 24, minWidth: 220 }}>
+            <div style={{ background: 'var(--bg3)', border: '1px solid var(--border2)', borderRadius: 8, padding: 24, minWidth: 220 }}>
               <div style={{ marginBottom: 16 }}>
                 <div style={{ fontSize: 11, color: 'var(--text3)', marginBottom: 4, fontFamily: 'var(--font-display)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Industry</div>
                 <span className={`tag ${c.tag}`}>{p.industry}</span>
@@ -71,7 +71,7 @@ export default function ProjectDetail() {
                 <div style={{ fontSize: 11, color: 'var(--text3)', marginBottom: 6, fontFamily: 'var(--font-display)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Role Tracks</div>
                 <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
                   {p.tracks.map(t => (
-                    <span key={t} style={{ fontSize: 10, padding: '3px 8px', border: '1px solid var(--border)', borderRadius: 2, color: 'var(--text3)', fontFamily: 'var(--font-display)', letterSpacing: '0.05em' }}>{t}</span>
+                    <span key={t} style={{ fontSize: 10, padding: '3px 8px', border: '1px solid var(--border2)', borderRadius: 2, color: 'var(--text3)', fontFamily: 'var(--font-display)', letterSpacing: '0.05em' }}>{t}</span>
                   ))}
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function ProjectDetail() {
           </div>
 
           {/* Problem */}
-          <div style={{ marginBottom: 64, background: 'var(--bg2)', border: '1px solid var(--border)', borderLeft: `3px solid ${c.hex}`, padding: 32, borderRadius: '0 8px 8px 0' }}>
+          <div style={{ marginBottom: 64, background: 'var(--bg2)', border: '1px solid var(--border2)', borderLeft: `3px solid ${c.hex}`, padding: 32, borderRadius: '0 8px 8px 0' }}>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: c.hex, marginBottom: 12 }}>The Problem</div>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 22, fontWeight: 800, color: 'var(--text)', marginBottom: 16, lineHeight: 1.3 }}>{p.problem.title}</h2>
             <p style={{ fontSize: 15, color: 'var(--text2)', lineHeight: 1.8 }}>{p.problem.body}</p>
@@ -158,8 +158,8 @@ export default function ProjectDetail() {
             <div className="section-eyebrow">Key Results</div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 16 }}>
               {p.results.map(r => (
-                <div key={r.metric} style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 8, padding: '20px 16px' }}>
-                  <div style={{ fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 800, color: c.hex, lineHeight: 1, marginBottom: 4 }}>{r.value}</div>
+                <div key={r.metric} style={{ background: 'var(--bg2)', border: '1px solid var(--border2)', borderRadius: 8, padding: '20px 16px' }}>
+                  <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(14px,2vw,22px)', fontWeight: 800, color: c.hex, lineHeight: 1.2, marginBottom: 4, wordBreak: 'break-word' }}>{r.value}</div>
                   <div style={{ fontSize: 12, fontWeight: 500, color: 'var(--text)', marginBottom: 4 }}>{r.metric}</div>
                   <div style={{ fontSize: 11, color: 'var(--text3)', lineHeight: 1.4 }}>{r.context}</div>
                 </div>
@@ -168,45 +168,44 @@ export default function ProjectDetail() {
           </div>
 
           {/* Key learning */}
-          <div style={{ marginBottom: 64, background: `linear-gradient(135deg, ${c.dim}, transparent)`, border: `1px solid ${c.hex}20`, borderRadius: 8, padding: 32 }}>
+          <div style={{ marginBottom: 64, background: c.dim, border: `1px solid ${c.hex}20`, borderRadius: 8, padding: 32 }}>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: c.hex, marginBottom: 12 }}>Key Learning</div>
             <p style={{ fontSize: 16, color: 'var(--text)', lineHeight: 1.8, fontStyle: 'italic' }}>"{p.keyLearning}"</p>
           </div>
 
-          {/* Files / Links */}
+          {/* Links */}
           <div style={{ marginBottom: 64 }}>
-            <div className="section-eyebrow">{p.isLive ? 'Links' : 'Project Files'}</div>
-
-          
-
+            <div className="section-eyebrow">Links</div>
             <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+
               <a href={p.githubLink} target="_blank" rel="noreferrer" style={{
                 fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
                 letterSpacing: '0.08em', textTransform: 'uppercase', padding: '12px 24px',
                 background: 'transparent', color: 'var(--text)', border: '1px solid var(--border2)',
-                borderRadius: 'var(--radius)', transition: 'all 0.2s',
+                borderRadius: 'var(--radius)', transition: 'all 0.2s', textDecoration: 'none',
               }}
                 onMouseEnter={e => e.target.style.borderColor = 'var(--text)'}
                 onMouseLeave={e => e.target.style.borderColor = 'var(--border2)'}
               >GitHub Repo ↗</a>
+
               {p.excelLink && (
-  <a href={p.excelLink} target="_blank" rel="noreferrer" style={{
-    fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
-    letterSpacing: '0.08em', textTransform: 'uppercase', padding: '12px 24px',
-    background: 'transparent', color: c.hex, border: `1px solid ${c.hex}`,
-    borderRadius: 'var(--radius)', transition: 'all 0.2s',
-  }}
-    onMouseEnter={e => { e.target.style.background = c.hex; e.target.style.color = '#fff'; }}
-    onMouseLeave={e => { e.target.style.background = 'transparent'; e.target.style.color = c.hex; }}
-  >↗ View Excel Analysis</a>
-)}
+                <a href={p.excelLink} target="_blank" rel="noreferrer" style={{
+                  fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
+                  letterSpacing: '0.08em', textTransform: 'uppercase', padding: '12px 24px',
+                  background: 'transparent', color: c.hex, border: `1px solid ${c.hex}`,
+                  borderRadius: 'var(--radius)', transition: 'all 0.2s', textDecoration: 'none',
+                }}
+                  onMouseEnter={e => { e.currentTarget.style.background = c.hex; e.currentTarget.style.color = '#fff'; }}
+                  onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = c.hex; }}
+                >↗ View Excel Analysis</a>
+              )}
 
               {p.isLive ? (
                 <a href={p.liveLink} target="_blank" rel="noreferrer" style={{
                   fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
                   letterSpacing: '0.08em', textTransform: 'uppercase', padding: '12px 24px',
                   background: c.dim, color: c.hex, border: `1px solid ${c.hex}40`,
-                  borderRadius: 'var(--radius)', transition: 'all 0.2s',
+                  borderRadius: 'var(--radius)', transition: 'all 0.2s', textDecoration: 'none',
                   display: 'flex', alignItems: 'center', gap: 8,
                 }}>
                   <span style={{ width: 6, height: 6, borderRadius: '50%', background: c.hex, display: 'inline-block' }} />
@@ -217,17 +216,21 @@ export default function ProjectDetail() {
                   fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
                   letterSpacing: '0.08em', textTransform: 'uppercase', padding: '12px 24px',
                   background: c.dim, color: c.hex, border: `1px solid ${c.hex}40`,
-                  borderRadius: 'var(--radius)', transition: 'all 0.2s',
+                  borderRadius: 'var(--radius)', transition: 'all 0.2s', textDecoration: 'none',
                 }}>Tableau Dashboard ↗</a>
               )}
+
             </div>
           </div>
         </div>
 
         {/* Prev / Next */}
-        <div style={{ borderTop: '1px solid var(--border)', paddingTop: 48, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
+        <div style={{ borderTop: '1px solid var(--border2)', paddingTop: 48, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
           {prev ? (
-            <Link to={`/projects/${prev.id}`} style={{ padding: 24, background: 'var(--bg2)',boxShadow: 'var(--neu-shadow)', border: 'none', borderRadius: 4, display: 'block', transition: 'background 0.2s' }}
+            <Link to={`/projects/${prev.id}`} style={{
+              padding: 24, background: 'var(--bg2)', border: '1px solid var(--border2)',
+              borderRadius: 4, display: 'block', transition: 'background 0.2s', textDecoration: 'none',
+            }}
               onMouseEnter={e => e.currentTarget.style.background = 'var(--surface)'}
               onMouseLeave={e => e.currentTarget.style.background = 'var(--bg2)'}
             >
@@ -236,7 +239,10 @@ export default function ProjectDetail() {
             </Link>
           ) : <div />}
           {next ? (
-            <Link to={`/projects/${next.id}`} style={{ padding: 24, background: 'var(--bg2)',boxShadow: 'var(--neu-shadow)', border: 'none', borderRadius: 4, display: 'block', textAlign: 'right', transition: 'background 0.2s' }}
+            <Link to={`/projects/${next.id}`} style={{
+              padding: 24, background: 'var(--bg2)', border: '1px solid var(--border2)',
+              borderRadius: 4, display: 'block', textAlign: 'right', transition: 'background 0.2s', textDecoration: 'none',
+            }}
               onMouseEnter={e => e.currentTarget.style.background = 'var(--surface)'}
               onMouseLeave={e => e.currentTarget.style.background = 'var(--bg2)'}
             >
