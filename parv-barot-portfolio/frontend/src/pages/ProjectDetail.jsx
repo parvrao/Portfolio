@@ -177,22 +177,7 @@ export default function ProjectDetail() {
           <div style={{ marginBottom: 64 }}>
             <div className="section-eyebrow">{p.isLive ? 'Links' : 'Project Files'}</div>
 
-            {!p.isLive && (
-              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 20 }}>
-                {p.files.map(f => (
-                  <div key={f} style={{
-                    display: 'flex', alignItems: 'center', gap: 8, padding: '10px 16px',
-                    background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 'var(--radius)',
-                    fontSize: 12, color: 'var(--text2)', fontFamily: 'var(--font-display)'
-                  }}>
-                    <span style={{ fontSize: 14 }}>
-                      {f.endsWith('.ipynb') ? '📓' : f.endsWith('.sql') ? '🗄️' : f.endsWith('.pptx') ? '📊' : f.endsWith('.xlsx') ? '📈' : '📁'}
-                    </span>
-                    {f}
-                  </div>
-                ))}
-              </div>
-            )}
+          
 
             <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
               <a href={p.githubLink} target="_blank" rel="noreferrer" style={{
