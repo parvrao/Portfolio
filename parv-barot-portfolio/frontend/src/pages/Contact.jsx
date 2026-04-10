@@ -47,22 +47,27 @@ export default function Contact() {
                 { role: 'Business Analyst', desc: 'Data-driven decision support, KPI reporting, cross-functional stakeholder work', color: 'var(--accent)' },
                 { role: 'Supply Chain Analyst', desc: 'Demand planning, inventory optimization, S&OP, logistics performance', color: 'var(--blue)' },
                 { role: 'Strategy / Management Consultant', desc: 'Hypothesis-driven problem solving, client deliverables, transformation roadmaps', color: 'var(--amber)' },
-              ].map(r => (
-                <div key={r.role} style={{ marginBottom: 24, paddingBottom: 24, borderBottom: '1px solid var(--border)', lastChild: { borderBottom: 'none' } }}>
+              ].map((r, i) => (
+                <div key={r.role} style={{ marginBottom: 24, paddingBottom: 24, borderBottom: i < 2 ? '1px solid var(--border)' : 'none' }}>
                   <div style={{ fontFamily: 'var(--font-display)', fontSize: 14, fontWeight: 700, color: r.color, marginBottom: 6 }}>{r.role}</div>
                   <div style={{ fontSize: 13, color: 'var(--text2)', lineHeight: 1.6 }}>{r.desc}</div>
                 </div>
               ))}
-              href="https://drive.google.com/file/d/1bP8ei6Vkwk3cxsNYWKNC_OMuUBTsy9Tc/view?usp=sharing" target="_blank" rel="noreferrer"
-                display: 'block', textAlign: 'center', marginTop: 8,
-                fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
-                letterSpacing: '0.08em', textTransform: 'uppercase',
-                padding: '14px 24px', background: 'var(--accent)', color: '#0a0a0a',
-                borderRadius: 'var(--radius)', transition: 'background 0.2s',
-              }}
+              <a
+                href="https://drive.google.com/file/d/1bP8ei6Vkwk3cxsNYWKNC_OMuUBTsy9Tc/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  display: 'block', textAlign: 'center', marginTop: 8,
+                  fontFamily: 'var(--font-display)', fontSize: 12, fontWeight: 700,
+                  letterSpacing: '0.08em', textTransform: 'uppercase',
+                  padding: '14px 24px', background: 'var(--accent)', color: '#fff',
+                  borderRadius: 'var(--radius)', transition: 'background 0.2s',
+                  textDecoration: 'none',
+                }}
                 onMouseEnter={e => e.target.style.background = 'var(--accent2)'}
                 onMouseLeave={e => e.target.style.background = 'var(--accent)'}
-              >View Resume</a>
+              >View Resume ↗</a>
             </div>
           </div>
         </div>
