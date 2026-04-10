@@ -242,7 +242,7 @@ export default function ProjectDetail() {
         {/* Prev / Next */}
         <div style={{ borderTop: '1px solid var(--border)', paddingTop: 48, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
           {prev ? (
-            <Link to={`/projects/${prev.id}`} style={{ padding: 24, background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 4, display: 'block', transition: 'background 0.2s' }}
+            <Link to={`/projects/${prev.id}`} style={{ padding: 24, background: 'var(--bg2)',boxShadow: 'var(--neu-shadow)', border: 'none', borderRadius: 4, display: 'block', transition: 'background 0.2s' }}
               onMouseEnter={e => e.currentTarget.style.background = 'var(--surface)'}
               onMouseLeave={e => e.currentTarget.style.background = 'var(--bg2)'}
             >
@@ -251,7 +251,7 @@ export default function ProjectDetail() {
             </Link>
           ) : <div />}
           {next ? (
-            <Link to={`/projects/${next.id}`} style={{ padding: 24, background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 4, display: 'block', textAlign: 'right', transition: 'background 0.2s' }}
+            <Link to={`/projects/${next.id}`} style={{ padding: 24, background: 'var(--bg2)',boxShadow: 'var(--neu-shadow)', border: 'none', borderRadius: 4, display: 'block', textAlign: 'right', transition: 'background 0.2s' }}
               onMouseEnter={e => e.currentTarget.style.background = 'var(--surface)'}
               onMouseLeave={e => e.currentTarget.style.background = 'var(--bg2)'}
             >
