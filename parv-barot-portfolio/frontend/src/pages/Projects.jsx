@@ -49,7 +49,7 @@ export default function Projects() {
                 <Link key={p.id} to={`/projects/${p.id}`} style={{ display: 'block', textDecoration: 'none' }}>
                   <div style={{
                     background: 'var(--bg2)', padding: 32, height: '100%',
-                    border: '1px solid var(--border)', transition: 'all 0.25s', cursor: 'pointer',
+                    boxShadow: 'var(--neu-shadow)', border: 'none', transition: 'all 0.25s', cursor: 'pointer',
                   }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--surface)'; e.currentTarget.style.borderColor = c.hex + '60'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'var(--bg2)'; e.currentTarget.style.borderColor = 'var(--border)'; }}
@@ -64,7 +64,7 @@ export default function Projects() {
 
                     <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 20 }}>
                       {p.tracks.map(t => (
-                        <span key={t} style={{ fontSize: 10, padding: '3px 8px', background: 'var(--bg3)', border: '1px solid var(--border)', borderRadius: 2, color: 'var(--text3)', fontFamily: 'var(--font-display)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t}</span>
+                        <span key={t} style={{ fontSize: 10, padding: '3px 8px', background: 'var(--bg3)', boxShadow: 'var(--neu-shadow)', border: 'none', borderRadius: 2, color: 'var(--text3)', fontFamily: 'var(--font-display)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t}</span>
                       ))}
                     </div>
 
