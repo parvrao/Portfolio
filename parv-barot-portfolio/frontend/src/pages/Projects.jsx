@@ -55,7 +55,7 @@ export default function Projects() {
                     onMouseLeave={e => { e.currentTarget.style.background = 'var(--bg2)'; e.currentTarget.style.borderColor = 'var(--border)'; }}
                   >
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 20 }}>
-                      <span style={{ fontFamily: 'var(--font-display)', fontSize: 40, fontWeight: 800, color: 'var(--border2)', lineHeight: 1 }}>{p.number}</span>
+                      <span style={{ fontFamily: 'var(--font-display)', fontSize: 40, fontWeight: 800, color: 'var(--text3)', lineHeight: 1 }}>{p.number}</span>
                       <span className={`tag ${c.tag}`}>{p.industry}</span>
                     </div>
 
